@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vue.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/x-template" id="item-template">
+        <li class="item">
+            <div class="treeTitle" @click="toggle" @dblclick="changeType">
+                <div class="nameBrdr"><span :class="{minus:open,plus:!open}"></span><em :data-open="isFolder" class="tips" :data-pid="model.pId" :data-id="model.id" :title="model.name" :data-iid="model.iid" :data-deep="model.deep">{{model.name}}</em></div>
+            </div>
+            <ul v-show="open" v-if="isFolder" >
+                <item
+                        v-for="model in model.children" :model="model" :my-init="myInit" :is-root="false">
+                </item>
+            </ul>
+        </li>
+    </script>
+    <script src="js/vueTree.js"></script>
+</head>
+<body>
+
+<div class="left">
+    <div class="tabSwitch">
+        <ul class="tabs">
+            <li :class="{hovers:hovers==1}" data-code="1">题目1</li>
+            <li :class="{hovers:hovers==2}" data-code="2">题目2</li>
+        </ul>
+        <ul  class="tree">
+            <item :model="treeData" :my-init="initItem" :is-root="true"></item>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

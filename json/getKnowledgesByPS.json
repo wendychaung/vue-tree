@@ -1,0 +1,59 @@
+{
+  "status":0,
+  "message":"success",
+  "data":[
+    {
+      "id": "xiaoxue-shuxue-beishidaban",
+      "pId": "xiaoxue-shuxue",
+      "name": "数学222222",
+      "deep": "1",
+      "children": [
+        {
+          "id": "120161214093417001020",
+          "pId": "xiaoxue-shuxue-beishidaban",
+          "name": "一年级上册",
+          "deep": "2",
+          "children": [
+            {
+              "id": "120161202111100001065",
+              "pId": "120161214093417001020",
+              "name": "第一单元 生活况味",
+              "deep": "3",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xiaoxue-shuxue-beishidaban",
+      "pId": "xiaoxue-shuxue",
+      "name": "数学",
+      "deep": "1",
+      "children": [
+        {
+          "id": "120161214093417001020",
+          "pId": "xiaoxue-shuxue-beishidaban",
+          "name": "一年级上册",
+          "deep": "2",
+          "children": [
+            {
+              "id": "120161202111100001065",
+              "pId": "120161214093417001020",
+              "name": "第一单元 生活况味",
+              "deep": "3",
+              "children": [
+                {
+                  "id": "120161202111100001065",
+                  "pId": "120161214093417001020",
+                  "name": "第一单元 生活况味生活况味",
+                  "deep": "5"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

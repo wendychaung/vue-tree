@@ -1,0 +1,69 @@
+{
+  "status":0,
+  "message":"success",
+  "data":[
+    {
+      "id": "xiaoxue-shuxue-beishidaban",
+      "pId": "xiaoxue-shuxue",
+      "name": "第一级1",
+      "deep": "1",
+      "children": [
+        {
+          "id": "120161214093417001020",
+          "pId": "xiaoxue-shuxue-beishidaban",
+          "name": "第二级1",
+          "deep": "2",
+          "children": [
+            {
+              "id": "120161202111100001065",
+              "pId": "120161214093417001020",
+              "name": "第一单元 生活况味",
+              "deep": "3",
+              "children": [
+                {
+                  "id": "120161202111100001065",
+                  "pId": "120161214093417001020",
+                  "name": "第一单元 生活况味生活况味",
+                  "deep": "4",
+                  "children": [
+                    {
+                      "id": "120161202111100001065",
+                      "pId": "120161214093417001020",
+                      "name": "第一单元 生活况味",
+                      "deep": "5",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xiaoxue-shuxue-beishidaban",
+      "pId": "xiaoxue-shuxue",
+      "name": "第一级2",
+      "deep": "1",
+      "children": [
+        {
+          "id": "120161214093417001020",
+          "pId": "xiaoxue-shuxue-beishidaban",
+          "name": "第二级2",
+          "deep": "2",
+          "children": [
+            {
+              "id": "120161202111100001065",
+              "pId": "120161214093417001020",
+              "name": "第一单元 生活况味",
+              "deep": "3",
+              "children": [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
