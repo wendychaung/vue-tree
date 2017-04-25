@@ -107,7 +107,7 @@ function initData(myUrl,myjson) {
 	$.ajax({
 		url:myUrl,
 		data:myjson,
-		type: "post",
+		type: "get",
 		dataType:'json',
 		async:false
 	}).done(function (data) {
