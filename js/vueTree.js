@@ -46,7 +46,7 @@ $(function () {
 	});
 	var  getCategoriesByPSUrl="json/getCategoriesByPS.json";
 	var  getKnowledgesByPSUrl="json/getKnowledgesByPS.json";
-	var mycategories=initData(getCategoriesByPSUrl,"");
+	var mycategories=initData(getCategoriesByPSUrl);
 	var cate={
 		firstDeep:1,
 		children:mycategories.data
@@ -70,7 +70,7 @@ $(function () {
 					phase:this.phase,
 					subject:this.subject
 				};
-				var mycategories=initData(myUrl,categoriesData,"");
+				var mycategories=initData(myUrl);
 				var myobject={
 					firstDeep:1,
 					children:mycategories.data
@@ -102,12 +102,11 @@ $(function () {
 		});
 		vm.reCategories();
 	});
-function initData(myUrl,myjson) {
+function initData(myUrl) {
 	var mydata;
 	$.ajax({
 		url:myUrl,
-		data:myjson,
-		type: "get",
+		type: "GET",
 		dataType:'json',
 		async:false
 	}).done(function (data) {
